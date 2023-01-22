@@ -9,19 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Syne&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/menu.css">
+    <script defer src="/js/script.js"></script>
 </head>
 <body>
-    <nav class="nav">
+    <nav>
         <div class="logo">
             <a href="#"><img src="/img/computador-colorido.svg" alt=""></a>
         </div>
-        <ul class="items">
-            <li><a href="#inicio">INÍCIO</a></li>
-            <li><a href="#projetos">PROJETOS</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
+        <div class="menu-btn">
+            <i class="menuBar fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#inicio" onclick="menuItemBorder()">INÍCIO</a>
+            </li>
+            <li>
+                <a href="#projetos" class="" onclick="menuItemBorder()">PROJETOS</a>
+            </li>
+            <li>
+                <a href="#habilidades" class="" onclick="menuItemBorder()">HABILIDADES</a>
+            </li>
         </ul>
     </nav>
 
@@ -46,16 +57,16 @@
             <h1 class="projetos-title">PROJETOS</h1>
             <div class="content-projetos">
                 <div class="item">
-                    <a href="https://dsmovie496.netlify.app/" target="_blank"><img src="/img/dsmovie.PNG" alt="cadeadoCinza"></a>
-                    <a href="https://dsmovie496.netlify.app/" target="_blank"><span>DS MOVIE</span></a>
+                    <a href="https://sifsoft.com.br/" target="_blank"><img src="/img/sifsoft.PNG" alt="sifsoft-image"></a>
+                    <a href="https://sifsoft.com.br/" target="_blank"><span>SifSoft</span></a>
                 </div>
                 <div class="item">
-                    <a href="https://pokedexgustavo.netlify.app/" target="_blank"><img src="/img/pokedex.PNG" alt="cadeadoCinza"></a>
+                    <a href="https://techsoft.vercel.app/" target="_blank"><img src="/img/techsoft.PNG" alt="techsoft-image"></a>
+                    <a href="https://techsoft.vercel.app/" target="_blank"><span>TechSoft</span></a>
+                </div>
+                <div class="item">
+                    <a href="https://pokedexgustavo.netlify.app/" target="_blank"><img src="/img/pokedex.PNG" alt="pokedex-image"></a>
                     <a href="https://pokedexgustavo.netlify.app/" target="_blank"><span>POKÉDEX</span></a>
-                </div>
-                <div class="item">
-                    <a href="https://projetofinalweb-gustavodias496.vercel.app/Home" target="_blank"><img src="/img/qgfinancas.PNG" alt="cadeadoCinza"></a>
-                    <a href="https://projetofinalweb-gustavodias496.vercel.app/Home" target="_blank"><span>QG FINANÇAS</span></a>
                 </div>
                 <div class="item">
                     <img src="/img/lock-alt-custom.svg" alt="cadeadoCinza">
@@ -81,15 +92,15 @@
             </div>
             <div class="item-habilidade">
                 <img src="/img/logo-css3-custom.svg" alt="cadeadoCinza">
-                <span>INTEMEDIÁRIO</span>
+                <span>INTERMEDIÁRIO</span>
             </div>
             <div class="item-habilidade">
                 <img src="/img/logo-javascript-custom.svg" alt="cadeadoCinza">
-                <span>INTEMEDIÁRIO</span>
+                <span>INTERMEDIÁRIO</span>
             </div>
             <div class="item-habilidade">
                 <img src="/img/logo-react-custom.svg" alt="cadeadoCinza">
-                <span>INICIANTE</span>
+                <span>INTERMEDIÁRIO</span>
             </div>
             <div class="item-habilidade">
                 <img src="/img/logo-nodejs-custom.svg" alt="cadeadoCinza">
@@ -101,15 +112,15 @@
             </div>
             <div class="item-habilidade">
                 <img src="/img/c-letter-custom.svg" alt="cadeadoCinza">
-                <span>INTEMEDIÁRIO</span>
+                <span>INTERMEDIÁRIO</span>
             </div>
             <div class="item-habilidade">
-                <img src="/img/postgresql-custom.svg" alt="cadeadoCinza">
+                <img src="/img/sql.svg" alt="cadeadoCinza">
                 <span>INICIANTE</span>
             </div>
             <div class="item-habilidade">
                 <img src="/img/logo-figma-custom.svg" alt="cadeadoCinza">
-                <span>INTEMEDIÁRIO</span>
+                <span>INTERMEDIÁRIO</span>
             </div>
             <div class="item-habilidade">
                 <img src="/img/cib-adobe-photoshop-custom.svg" alt="cadeadoCinza">
@@ -121,7 +132,7 @@
             </div>
             <div class="item-habilidade">
                 <span class="ingles-title" style="color: #8257e6;">INGLÊS</span>
-                <span class="ingles">INTEMEDIÁRIO</span>
+                <span class="ingles">INTERMEDIÁRIO</span>
             </div>
         </div>
         <br>

@@ -28,40 +28,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.nav{
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-
-    border-bottom: 3px solid var(--color-purple);
-
-    background: var(--color-bg-dark);
-}
-
-.nav a img{
-    width: 6em;
-    height: 8vh;
-    padding-left: 1em;
-}
-
-.nav ul{
-    display: flex;
-    list-style: none;
-    padding-right: 1em;
-}
-
-.nav ul li a{
-    text-decoration: none;
-    color: var(--color-text);
-    padding-right: 2em;
-    font-size: 1em;
-    font-weight: 600;
-    font-family: Helvetica;
-}
-
 #inicio{
     height: 100vh;
     display: flex;

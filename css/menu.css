@@ -1,0 +1,127 @@
+:root{
+    --color-bg-dark: #070707;
+    --color-bg-gray: #22201f;
+    --color-purple: #8257e6;
+    --color-border: #FFFFFF;
+    --color-gradient-dark: #070707;
+    --color-gradient-light: #13131f;
+
+    --color-text: #FFFFFF;
+
+    --color-logo-dark: #000000;
+    --color-text-gray: #1E1E1E;
+    --color-logo-light: #FFFFFF;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    border-bottom: 3px solid var(--color-purple);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Helvetica;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    border: 3px solid var(--color-purple);
+}
+
+nav .menu-btn i{
+    color: #8257e6;
+    cursor: pointer;
+    display: none;
+    padding-right: 15px;
+}
+
+nav a img{
+    width: 6em;
+    height: 8vh;
+    padding-left: 1em;
+}
+
+.menuClose{
+    font-size: 2em;
+    display: none;
+}
+
+.menuBar{
+    font-size: 2em;
+    display: none;
+}
+
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+
+    .menuClose{
+        font-size: 2em;
+        display: block;
+    }
+
+    .menuBar{
+        font-size: 2em;
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: var(--color-bg-dark);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a{
+        font-size: 23px;
+        
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover{
+        background-color: none;
+        color: var(--color-text);
+    }
+}
